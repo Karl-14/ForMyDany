@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Audio Clásico</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f2f7;
+            color: #333;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            color: #555;
+        }
+        .track {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ffe0e0;
+            border-radius: 10px;
+            border: 1px solid #f8b5b5;
+        }
+        .track h2 {
+            margin: 0;
+            color: #d32f2f;
+        }
+        .audio-player {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .header-img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .header-text {
+            color: #d32f2f;
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #d32f2f;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="header-img" src="https://media.stickerswiki.app/mugsy/6185257.160.webp" alt="Imagen de encabezado">
+        <div class="header-text">Elige una cancióncita, hermosa</div>
+
+        <div class="track">
+            <h2>Piel Canela</h2>
+            <audio id="audioPlayer" class="audio-player" controls>
+                <source src="https://www.dropbox.com/scl/fi/gwl5s66de01yp271utttb/canela1.mp3?rlkey=dz5v5ieufa4soky1x5bij66ja&st=1o9yvyn0&dl=1" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+
+        <div class="track">
+            <h2>Gracias a Ti</h2>
+            <audio id="audioPlayer2" class="audio-player" controls>
+                <source src="https://www.dropbox.com/scl/fi/ydintma1gyh1eypoxx3zm/danny2.mp3?rlkey=4ri5y5p2j6az9v0p6ssbs867p&st=woqwq1jo&dl=1" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+
+        <div class="track">
+            <h2>Pláticame de Ti</h2>
+            <audio id="audioPlayer3" class="audio-player" controls>
+                <source src="https://www.dropbox.com/scl/fi/qweebdbb45b97gtvsmrv3/platica2.mp3?rlkey=vmm066vo2yi6dkj6qz03ctuug&st=11sz5zp0&dl=1" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+
+        <a href="play.html" class="button">Listo</a>
+    </div>
+</body>
+</html>
